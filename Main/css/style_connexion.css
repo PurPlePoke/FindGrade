@@ -1,0 +1,158 @@
+    /*         /// Template ///        */
+
+
+/* Placement des Elément sur la page */
+
+
+
+/*     ////////////////////////////////////////// */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex; 
+    justify-content: left; /* Positionnement horizontal de la zone de contenu*/
+    align-items: left; /* Positionnement vertical de la zone de contenu */
+    min-height: 100vh;
+    background: url(https://i.vimeocdn.com/video/615971383-e767507895aabce73d8938bee58f08e5d0d190b08ababf9369b2cc8e24ed1bfa-d);
+    background-size: cover;
+    background-position: center;    
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent; /* Zonz d'interaction */
+    border: 2px solid rgba(255, 255, 255, .2); /* Aperçu de la bordure de la zone d'intéraction */
+    backdrop-filter: blur(20px); /* Effet appliqué au fond de la zone d'intéraction */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* Ombre de la zone d'intéraction */
+    color: #fff; /* Couleur de l'écriture dans la zone d'intéraction */
+    border-radius: 10px; /* Forme des coins de la zone d'intéraction */ 
+    padding: 30px 40px; /* Hauteur et largeur de la zone d'intéraction */ 
+}
+
+.wrapper .logo img{
+    width: 75%;/* Taille des images */
+    position: relative;
+    left: 15%; /* Espacement vers la droite */
+}
+
+.FindGrade_logo img{
+    width: 5%;
+}
+
+.wrapper h1{
+    padding-top: 2vh; /* Distance de hauteur entre les éléments H1 dans la zone d'intéraction  */
+    font-size: 36px;  /* Taille du texte*/
+    text-align: center; /* Positionnement horizontal du texte dans la zone d'intéraction */
+
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%; /* Largeur de la zone de texte */
+    height: 50px; /* Epaisseur de la zone de texte */
+    margin: 30px 0; /* Espacement entre les différentes zones de texte */
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    padding-top: 1em;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline; 
+}
+
+.footer{
+    position: absolute; /* Fixation de la position dans la zone d'intéraction */
+    padding-bottom: 2vh;    /* Distance vertical avec le bas de la zone d'intéraction */
+    bottom: 0;  /* Postionnement du footer au bas de la zone d'intéraction*/
+    left: 40%;  /* Décalage horizontal vers la droite de la zone d'intéraction*/
+
+}
+
+@media screen and (max-width: 900px){
+    .wrapper {
+        width: auto; /* Largeur automatique de la zone d'intéraction à l'entièreté de la page pour les plus petits écrans  */
+        background: transparent; /* Couleur de la Zone d'interaction */
+        border: 2px solid rgba(255, 255, 255, .2); /* Aperçu de la bordure de la zone d'intéraction */
+        backdrop-filter: blur(20px); /* Effet appliqué au fond de la zone d'intéraction */
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* Ombre de la zone d'intéraction */
+        color: #fff; /* Couleur de l'écriture dans la zone d'intéraction */
+        border-radius: 10px; /* Forme des coins de la zone d'intéraction */ 
+        padding: 30px 40px; /* Hauteur et largeur de la zone d'intéraction */ 
+    }
+}

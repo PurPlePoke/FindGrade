@@ -1,0 +1,293 @@
+html {
+    background: #d8d8d8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+/* //////////////////////////////  Contenu de la page  ///////////////////////////// */
+
+.presentation {
+    font-size: 25px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////  Footer  /////////////////////////////////// */
+.footer{
+    position: absolute; /* Fixation de la position dans la zone d'intéraction */
+    padding-bottom: 1vh;    /* Distance vertical avec le bas de la zone d'intéraction */
+    bottom: 0;  /* Postionnement du footer au bas de la zone d'intéraction*/
+    left: 48%;  /* Décalage horizontal vers la droite de la zone d'intéraction*/
+    color: #fff;
+    font-size: 18px;
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////  Responsivité  /////////////////////////////////// */
+@media screen and (max-width: 900px){
+
+    .presentation {
+        padding: 15% 10%;
+        font-size: 25px;
+    }
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////  Formulaire  /////////////////////////////////// */
+
+
+main {
+    min-height: 93.7vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+
+.container2 {
+    position: flex;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container2 h1{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container2 .form{
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form .input-box input, .form .input-box select {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender-box{
+    margin-top: 20px;
+}
+
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.gender input{
+    accent-color: rgb(130, 106, 251);
+}
+
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+
+.gender label{
+    color: #707070;
+}
+
+.form button, .container2 button, .containerTable button {
+    height: 55px;
+    width: 100%; 
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    background-color: rgba(130, 106, 251);
+}
+
+.form button:hover{
+    background-color: rgba(88, 56, 250);
+
+}
+
+
+
+  /* ///////////////////////////////////////////////////////////////////////////////// */
+
+  /* ////////////////////////////////////  Formulaire  /////////////////////////////////// */
+
+ /* .table {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+}
+
+.table .test {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+}
+*/
+
+
+
+
+.table th, .table {
+    padding-top: 2em;
+    
+}
+
+.containerTable h1{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.containerTable .form{
+    margin-top: 30px;
+}
+
+
+.containerTable {
+    position: flex;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.containerTable table {
+
+    left: 50%;
+    top: 50%;
+    border-collapse: collapse;
+    width: 600px;
+    height: 200px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+td {
+    padding: 12px;
+    text-align: justify;
+    border-bottom: 1px solid #ddd;
+    padding-left: 4em;
+}
+
+.table tr {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    display: inline-table;
+    padding: 0 15px;
+    margin: 1em;
+    
+}
+
+
+
+#note {
+    position: relative;
+    height: 50px;
+    width: 30%;
+    outline: none;
+    font-size: 1rem;
+    color: red;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    
+}
+
+ tbody tr:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media screen and (max-width: 500px){
+    .form .column {
+        flex-wrap: wrap;
+    }
+
+    .for :where(.gender-option, .gender){
+        row-gap: 15px;
+    }
+}
+
+
+  /* Responsive design for smaller screens */
+  @media only screen and (max-width: 768px) {
+    main {
+      padding: 10px;
+    }
+  }
+  
+  /* Responsive design for larger screens */
+  @media only screen and (min-width: 1200px) {
+    main {
+      padding: 30px;
+    }
+  }
